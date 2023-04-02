@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em;
+        }
+
+        label {
+            font-size: 1.2em;
+        }
+
+        input[type="file"] {
+            margin-top: 1em;
+        }
+
+        button[type="submit"] {
+            background-color: #0077b6;
+            color: white;
+            padding: 1em;
+            border: none;
+            border-radius: 0.5em;
+            font-size: 1.2em;
+            margin-top: 1em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #004f8a;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <main>
+        <form method="post" enctype="multipart/form-data">
+            <label for="image">Choose an image to upload:</label>
+            <input type="file" id="image" name="image">
+            <button type="submit">Upload</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2023 My Website
+    </footer>
+</body>
+</html>
